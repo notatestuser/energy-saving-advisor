@@ -30,7 +30,7 @@
                     </g>
                   </svg><span>Light Emitting Diode (LED)</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('lighting', 'led')" data-efficiency="3">
+                <dd ng-class="getItemSelectedClass('lighting', 'led')" class="efficiency-grade-3">
                   <p><i class="icon-power-off"></i>Typically 8W<br/><i class="icon-time"></i>50,000 hours<br/><i class="icon-gbp"></i>&pound;5.95 per bulb</p>
                   <p class="role">
                     Previously considered to be quite pricey for a light bulb, LED lamps are gaining traction as
@@ -54,7 +54,7 @@
                     </g>
                   </svg><span>Fluorescent</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('lighting', 'fluorescent')" data-efficiency="2">
+                <dd ng-class="getItemSelectedClass('lighting', 'fluorescent')" class="efficiency-grade-2">
                   <p><i class="icon-power-off"></i>Typically 23W<br/><i class="icon-time"></i>10,000 hours<br/><i class="icon-gbp"></i>&pound;3.99 per bulb</p>
                   <p class="role">
                     Though strange in appearance after the long legacy of the incandescent, the fluorescent
@@ -78,7 +78,7 @@
                     </g>
                   </svg><span>Incandescent</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('lighting', 'incandescent')" data-efficiency="1">
+                <dd ng-class="getItemSelectedClass('lighting', 'incandescent')" class="efficiency-grade-1">
                   <p><i class="icon-power-off"></i>Typically 100W<br/><i class="icon-time"></i>750 hours<br/><i class="icon-gbp"></i>&pound;0.45 per bulb</p>
                   <p class="role">
                     With its screw fitting named after Thomas Edison, the incandescent lamp was where it all started.
@@ -108,7 +108,7 @@
                     </g>
                   </svg><span>Liquid Crystal Display</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('television', 'lcd')" data-efficiency="3">
+                <dd ng-class="getItemSelectedClass('television', 'lcd')" class="efficiency-grade-3">
                   <p><i class="icon-power-off"></i>~ 230 kWh annually</p>
                   <p class="role">
                     LCD displays, or "flat panels", are better looking and slightly more power efficient
@@ -131,7 +131,7 @@
                     </g>
                   </svg><span>Cathode Ray Tube (CRT)</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('television', 'crt')" data-efficiency="2">
+                <dd ng-class="getItemSelectedClass('television', 'crt')" class="efficiency-grade-2">
                   <p><i class="icon-power-off"></i>~ 240 kWh annually</p>
                   <p class="role">
                     CRT screens are the older "box" style of television. While their production actually
@@ -155,7 +155,7 @@
                     </g>
                   </svg><span>Plasma Display</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('television', 'plasma')" data-efficiency="1">
+                <dd ng-class="getItemSelectedClass('television', 'plasma')" class="efficiency-grade-1">
                   <p><i class="icon-power-off"></i>~ 313 kWh annually</p>
                   <p class="role">
                     Plasma screens often take a similar "flat" form factor to LCD screens.
@@ -180,7 +180,7 @@
                     </g>
                   </svg><span>Switched off</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('standby', 'off')" data-efficiency="3">
+                <dd ng-class="getItemSelectedClass('standby', 'off')" class="efficiency-grade-3">
                   <p><i class="icon-power-off"></i>Uses no power</p>
                   <p class="role">
                     Few people have the time to switch off all of their devices after they've finished
@@ -206,7 +206,7 @@
                     </g>
                   </svg><span>Standby mode</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('standby', 'standby')" data-efficiency="2">
+                <dd ng-class="getItemSelectedClass('standby', 'standby')" class="efficiency-grade-2">
                   <p><i class="icon-power-off"></i>Varies by device</p>
                   <p class="role">
                     If you think your digital set-top-box is not influencing your footprint while in
@@ -237,7 +237,7 @@
                     </g>
                   </svg><span>Always on</span>
                 </dt>
-                <dd ng-class="getItemSelectedClass('standby', 'always-on')" data-efficiency="1">
+                <dd ng-class="getItemSelectedClass('standby', 'always-on')" class="efficiency-grade-1">
                   <p><i class="icon-power-off"></i>Full power consumption</p>
                   <p class="role">
                     Modern devices are typically smart enough to switch themselves off after a period of
