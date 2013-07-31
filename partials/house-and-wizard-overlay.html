@@ -13,7 +13,7 @@
           <p ng-class="{in: regionName}" class="collapsing-notice collapse"><i class="icon-home"></i><span class="region-affirmation"> You are living in the {{regionName}} region<span class="visible-desktop"> of the UK</span></span></p>
         </div>
         <div class="modal-footer">
-          <div class="pull-left visible-desktop"><a href="javascript:void(0)" data-toggle="popover" data-placement="bottom" data-content="This housing data was part of an app competition. We don't send anything to anyone. Ever." title="" data-title="Privacy information" class="privacy-information-link"><i class="icon-info-sign"></i><small> Why are you asking?</small></a></div>
+          <div class="pull-left visible-desktop"><a href="javascript:void(0)" data-toggle="popover" data-placement="bottom" data-content="This housing data was part of an app competition and the data is fake. We don't send anything to anyone. Ever." title="" data-title="Privacy information" class="privacy-information-link"><i class="icon-info-sign"></i><small> Why are you asking?</small></a></div>
           <button ng-click="showStep(2)" ng-disabled="!house.foundViaWebService" class="btn btn-primary">Next step &raquo;</button>
         </div>
       </div>
@@ -208,7 +208,7 @@
       </div>
     </div>
   </div>
-  <div data-step="6" class="row-fluid overlay wizard-step">
+  <div data-step="6" data-final="true" class="row-fluid overlay wizard-step">
     <div class="offset1 span8">
       <div class="offset3 span9 modal">
         <div class="modal-header">
