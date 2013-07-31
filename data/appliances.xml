@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appliances>
+  <appliance name="Coffee maker" wattage="900" />
+  <appliance name="Clothes washer" wattage="300" />
+  <appliance name="Clothes dryer" wattage="1800" />
+  <appliance name="Dishwasher " wattage="1200" />
+  <appliance name="Dehumidifier" wattage="785" />
+  <appliance name="Electric blanket Double" wattage="100" />
+  <appliance name="Ceiling Fan" wattage="65" />
+  <appliance name="Hair dryer" wattage="1200" />
+  <appliance name="Heater (portable)" wattage="750" />
+  <appliance name="Clothes iron" wattage="1000" />
+  <appliance name="Microwave oven" wattage="750" />
+  <appliance name="Personal computer" wattage="120" />
+  <appliance name="CPU - awake" wattage="120" />
+  <appliance name="CPU - asleep" wattage="30" />
+  <appliance name="Monitor - awake" wattage="150" />
+  <appliance name="Monitor - asleep" wattage="30" />
+  <appliance name="Laptop" wattage="50" />
+  <appliance name="Radio (stereo)" wattage="300" />
+  <appliance name="Refrigerator (frost-free, 16 cubic feet)" wattage="725" />
+  <appliance name="19&quot; Televisions" wattage="95" />
+  <appliance name="27&quot; Televisions" wattage="113" />
+  <appliance name="36&quot; Televisions" wattage="133" />
+  <appliance name="53&quot; - 61&quot; Televisions" wattage="170" />
+  <appliance name="Toaster " wattage="800" />
+  <appliance name="VCR" wattage="17" />
+  <appliance name="DVD" wattage="20" />
+  <appliance name="Vacuum cleaner" wattage="1000" />
+</appliances>

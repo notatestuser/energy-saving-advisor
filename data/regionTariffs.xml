@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<regions>
+  <region regionCode="10" regionName="Eastern">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1535" unitRate="0.1314" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.167315" unitRate="0.11826" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.200778" unitRate="0.094608" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.4736" unitRate="0.23652" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.5043" unitRate="0.17082" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>
+    </tariffs>
+  </region>
+
+  <region regionCode="11" regionName="East Midlands">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.156" unitRate="0.1299" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.17004" unitRate="0.11691" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.204048" unitRate="0.093528" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.4976" unitRate="0.23382" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.5288" unitRate="0.16887" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>
+     </tariffs>
+  </region>
+
+  <region regionCode="12" regionName="London">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1357" unitRate="0.1356" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.147913" unitRate="0.12204" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.1774956" unitRate="0.097632" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.30272" unitRate="0.24408" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.32986" unitRate="0.17628" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   
+    </tariffs>
+  </region>
+
+  <region regionCode="13" regionName="North Wales &amp; Merseyside">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1357" unitRate="0.1389" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.147913" unitRate="0.12501" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.1774956" unitRate="0.100008" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.30272" unitRate="0.25002" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.32986" unitRate="0.18057" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="14" regionName="West Midlands">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1575" unitRate="0.1311" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.171675" unitRate="0.11799" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.20601" unitRate="0.094392" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.512" unitRate="0.23598" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.5435" unitRate="0.17043" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="15" regionName="North East">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1776" unitRate="0.1334" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.193584" unitRate="0.12006" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.2323008" unitRate="0.096048" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.70496" unitRate="0.24012" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.74048" unitRate="0.17342" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="16" regionName="North West">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.147" unitRate="0.131" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.16023" unitRate="0.1179" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.192276" unitRate="0.09432" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.4112" unitRate="0.2358" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.4406" unitRate="0.1703" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="17" regionName="North Scotland">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1466" unitRate="0.1429" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.159794" unitRate="0.12861" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.1917528" unitRate="0.102888" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.40736" unitRate="0.25722" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.43668" unitRate="0.18577" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>  </tariffs>
+  </region>
+
+  <region regionCode="18" regionName="South Scotland">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1678" unitRate="0.1379" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.182902" unitRate="0.12411" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.2194824" unitRate="0.099288" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.61088" unitRate="0.24822" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.64444" unitRate="0.17927" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="19" regionName="South East">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1619" unitRate="0.1299" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.176471" unitRate="0.11691" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.2117652" unitRate="0.093528" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.55424" unitRate="0.23382" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.58662" unitRate="0.16887" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+   <region regionCode="20" regionName="Southern">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.1531" unitRate="0.1323" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.166879" unitRate="0.11907" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.2002548" unitRate="0.095256" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.46976" unitRate="0.23814" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.50038" unitRate="0.17199" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+   <region regionCode="21" regionName="South Wales">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.0899" unitRate="0.1413" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.097991" unitRate="0.12717" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.1175892" unitRate="0.101736" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="0.86304" unitRate="0.25434" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="0.88102" unitRate="0.18369" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+   <region regionCode="22" regionName="South West">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.091" unitRate="0.147" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.09919" unitRate="0.1323" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.119028" unitRate="0.10584" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="0.8736" unitRate="0.2646" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="0.8918" unitRate="0.1911" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+
+  <region regionCode="23" regionName="Yorkshire">
+    <tariffs>
+      <tariff name="tariff1">
+        <fuel fuelType="E" standingCharge="0.169" unitRate="0.1297" />
+        <fuel fuelType="G" standingCharge="0.2235" unitRate="0.04916" />
+      </tariff>
+      <tariff name="tariff2">
+        <fuel fuelType="E" standingCharge="0.18421" unitRate="0.11673" />
+        <fuel fuelType="G" standingCharge="0.243615" unitRate="0.044244" />
+      </tariff>
+      <tariff name="tariff3">
+        <fuel fuelType="E" standingCharge="0.221052" unitRate="0.093384" />
+        <fuel fuelType="G" standingCharge="0.146169" unitRate="0.066366" />
+      </tariff>
+      <tariff name="tariff4">
+        <fuel fuelType="E" standingCharge="1.6224" unitRate="0.23346" />
+        <fuel fuelType="G" standingCharge="0.3576" unitRate="0.471936" />
+      </tariff>
+      <tariff name="tariff5">
+        <fuel fuelType="E" standingCharge="1.6562" unitRate="0.16861" />
+        <fuel fuelType="G" standingCharge="0.2682" unitRate="0.486684" />
+      </tariff>   </tariffs>
+  </region>
+</regions>

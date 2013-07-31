@@ -1,0 +1,1290 @@
+[
+  {
+    "region": "Eastern",
+    "regionCode": 10,
+    "station": "Durham",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "7.7",
+        "minDegC": "1.5",
+        "afDays": "8",
+        "rainMm": "30.4",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "8.1",
+        "minDegC": "1.8",
+        "afDays": "11",
+        "rainMm": "10.2",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "13.7",
+        "minDegC": "3.6",
+        "afDays": "3",
+        "rainMm": "15.0",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "10.8",
+        "minDegC": "2.9",
+        "afDays": "4",
+        "rainMm": "134.4",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "15.2",
+        "minDegC": "5.9",
+        "afDays": "1",
+        "rainMm": "66.2",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "16.1",
+        "minDegC": "8.7",
+        "afDays": "0",
+        "rainMm": "136.6",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "18.3",
+        "minDegC": "10.9",
+        "afDays": "0",
+        "rainMm": "98.0",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "19.9",
+        "minDegC": "11.3",
+        "afDays": "0",
+        "rainMm": "103.4",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "16.8",
+        "minDegC": "8.7",
+        "afDays": "0",
+        "rainMm": "116.2",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "12.4",
+        "minDegC": "4.4",
+        "afDays": "2",
+        "rainMm": "83.6",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "9.2",
+        "minDegC": "2.9",
+        "afDays": "6",
+        "rainMm": "124.8",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "6.6",
+        "minDegC": "1.1",
+        "afDays": "10",
+        "rainMm": "99.2",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "East Midlands",
+    "regionCode": 11,
+    "station": "Sutton Bonington",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "8.8",
+        "minDegC": "2.4",
+        "afDays": "7",
+        "rainMm": "54.2",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "7.3",
+        "minDegC": "0.8",
+        "afDays": "13",
+        "rainMm": "13.4",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "13.0",
+        "minDegC": "2.8",
+        "afDays": "6",
+        "rainMm": "23.0",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "11.4",
+        "minDegC": "3.5",
+        "afDays": "4",
+        "rainMm": "116.4",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "16.5",
+        "minDegC": "7.1",
+        "afDays": "0",
+        "rainMm": "27.0",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "17.5",
+        "minDegC": "10.3",
+        "afDays": "0",
+        "rainMm": "134.9",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "19.9",
+        "minDegC": "11.7",
+        "afDays": "0",
+        "rainMm": "108.2",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "21.4",
+        "minDegC": "12.3",
+        "afDays": "0",
+        "rainMm": "48.1",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "18.1",
+        "minDegC": "8.9",
+        "afDays": "0",
+        "rainMm": "54.4",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "12.8",
+        "minDegC": "6.0",
+        "afDays": "1",
+        "rainMm": "55.6",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "9.6",
+        "minDegC": "3.8",
+        "afDays": "4",
+        "rainMm": "89.8",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "7.7",
+        "minDegC": "2.1",
+        "afDays": "9",
+        "rainMm": "106.8",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "London",
+    "regionCode": 12,
+    "station": "Heathrow",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "9.8",
+        "minDegC": "3.4",
+        "afDays": "7",
+        "rainMm": "34.4",
+        "sunHours": "68.5"
+      },
+      "2": {
+        "maxDegC": "8.0",
+        "minDegC": "1.3",
+        "afDays": "12",
+        "rainMm": "16.8",
+        "sunHours": "84.9"
+      },
+      "3": {
+        "maxDegC": "14.7",
+        "minDegC": "4.7",
+        "afDays": "0",
+        "rainMm": "16.2",
+        "sunHours": "180.3"
+      },
+      "4": {
+        "maxDegC": "13.3",
+        "minDegC": "4.9",
+        "afDays": "1",
+        "rainMm": "98.4",
+        "sunHours": "141.7"
+      },
+      "5": {
+        "maxDegC": "18.2",
+        "minDegC": "9.7",
+        "afDays": "0",
+        "rainMm": "25.4",
+        "sunHours": "166.6"
+      },
+      "6": {
+        "maxDegC": "19.4",
+        "minDegC": "11.6",
+        "afDays": "0",
+        "rainMm": "110.8",
+        "sunHours": "118.5"
+      },
+      "7": {
+        "maxDegC": "21.3",
+        "minDegC": "13.2",
+        "afDays": "0",
+        "rainMm": "71.8",
+        "sunHours": "161.6"
+      },
+      "8": {
+        "maxDegC": "23.5",
+        "minDegC": "14.3",
+        "afDays": "0",
+        "rainMm": "36.4",
+        "sunHours": "182.6"
+      },
+      "9": {
+        "maxDegC": "20.0",
+        "minDegC": "10.3",
+        "afDays": "0",
+        "rainMm": "41.2",
+        "sunHours": "178.9"
+      },
+      "10": {
+        "maxDegC": "14.2",
+        "minDegC": "8.0",
+        "afDays": "0",
+        "rainMm": "88.4",
+        "sunHours": "85.6"
+      },
+      "11": {
+        "maxDegC": "11.0",
+        "minDegC": "4.6",
+        "afDays": "1",
+        "rainMm": "71.8",
+        "sunHours": "75.4"
+      },
+      "12": {
+        "maxDegC": "9.0",
+        "minDegC": "2.6",
+        "afDays": "10",
+        "rainMm": "95.8",
+        "sunHours": "58.0"
+      }
+    }
+  },
+  {
+    "region": "North Wales & Merseyside",
+    "regionCode": 13,
+    "station": "Valley",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "9.0",
+        "minDegC": "4.4",
+        "afDays": "5",
+        "rainMm": "60.6",
+        "sunHours": "55.8"
+      },
+      "2": {
+        "maxDegC": "8.1",
+        "minDegC": "3.9",
+        "afDays": "6",
+        "rainMm": "37.4",
+        "sunHours": "48.2"
+      },
+      "3": {
+        "maxDegC": "11.9",
+        "minDegC": "6.2",
+        "afDays": "0",
+        "rainMm": "19.0",
+        "sunHours": "147.3"
+      },
+      "4": {
+        "maxDegC": "10.9",
+        "minDegC": "4.9",
+        "afDays": "0",
+        "rainMm": "65.4",
+        "sunHours": "144.6"
+      },
+      "5": {
+        "maxDegC": "15.0",
+        "minDegC": "7.8",
+        "afDays": "0",
+        "rainMm": "47.8",
+        "sunHours": "221.2"
+      },
+      "6": {
+        "maxDegC": "16.0",
+        "minDegC": "10.5",
+        "afDays": "0",
+        "rainMm": "107.4",
+        "sunHours": "145.1"
+      },
+      "7": {
+        "maxDegC": "16.7",
+        "minDegC": "12.3",
+        "afDays": "0",
+        "rainMm": "70.6",
+        "sunHours": "112.0"
+      },
+      "8": {
+        "maxDegC": "19.0",
+        "minDegC": "13.8",
+        "afDays": "0",
+        "rainMm": "110.7",
+        "sunHours": "175.7"
+      },
+      "9": {
+        "maxDegC": "16.0",
+        "minDegC": "11.3",
+        "afDays": "0",
+        "rainMm": "112.0",
+        "sunHours": "134.6"
+      },
+      "10": {
+        "maxDegC": "13.3",
+        "minDegC": "8.2",
+        "afDays": "0",
+        "rainMm": "113.6",
+        "sunHours": "90.1"
+      },
+      "11": {
+        "maxDegC": "10.3",
+        "minDegC": "5.9",
+        "afDays": "1",
+        "rainMm": "149.2",
+        "sunHours": "62.4"
+      },
+      "12": {
+        "maxDegC": "9.0",
+        "minDegC": "3.9",
+        "afDays": "5",
+        "rainMm": "128.0",
+        "sunHours": "40.4"
+      }
+    }
+  },
+  {
+    "region": "West Midlands",
+    "regionCode": 14,
+    "station": "Shawbury",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "8.8",
+        "minDegC": "1.6",
+        "afDays": "9",
+        "rainMm": "43.6",
+        "sunHours": "74.1"
+      },
+      "2": {
+        "maxDegC": "7.6",
+        "minDegC": "0.9",
+        "afDays": "14",
+        "rainMm": "19.2",
+        "sunHours": "50.8"
+      },
+      "3": {
+        "maxDegC": "13.0",
+        "minDegC": "3.2",
+        "afDays": "4",
+        "rainMm": "16.6",
+        "sunHours": "153.1"
+      },
+      "4": {
+        "maxDegC": "11.1",
+        "minDegC": "2.8",
+        "afDays": "6",
+        "rainMm": "112.4",
+        "sunHours": "110.1"
+      },
+      "5": {
+        "maxDegC": "16.5",
+        "minDegC": "6.9",
+        "afDays": "1",
+        "rainMm": "50.8",
+        "sunHours": "189.2"
+      },
+      "6": {
+        "maxDegC": "17.4",
+        "minDegC": "10.0",
+        "afDays": "0",
+        "rainMm": "82.6",
+        "sunHours": "83.8"
+      },
+      "7": {
+        "maxDegC": "19.3",
+        "minDegC": "11.4",
+        "afDays": "0",
+        "rainMm": "128.2",
+        "sunHours": "140.8"
+      },
+      "8": {
+        "maxDegC": "20.3",
+        "minDegC": "11.7",
+        "afDays": "0",
+        "rainMm": "86.2",
+        "sunHours": "128.3"
+      },
+      "9": {
+        "maxDegC": "17.0",
+        "minDegC": "7.8",
+        "afDays": "0",
+        "rainMm": "116.2",
+        "sunHours": "140.1"
+      },
+      "10": {
+        "maxDegC": "12.7",
+        "minDegC": "5.1",
+        "afDays": "3",
+        "rainMm": "69.6",
+        "sunHours": "95.0"
+      },
+      "11": {
+        "maxDegC": "9.8",
+        "minDegC": "1.9",
+        "afDays": "10",
+        "rainMm": "86.8",
+        "sunHours": "63.5"
+      },
+      "12": {
+        "maxDegC": "7.7",
+        "minDegC": "0.7",
+        "afDays": "10",
+        "rainMm": "133.0",
+        "sunHours": "51.2"
+      }
+    }
+  },
+  {
+    "region": "North East",
+    "regionCode": 15,
+    "station": "Durham",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "7.7",
+        "minDegC": "1.5",
+        "afDays": "8",
+        "rainMm": "30.4",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "8.1",
+        "minDegC": "1.8",
+        "afDays": "11",
+        "rainMm": "10.2",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "13.7",
+        "minDegC": "3.6",
+        "afDays": "3",
+        "rainMm": "15.0",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "10.8",
+        "minDegC": "2.9",
+        "afDays": "4",
+        "rainMm": "134.4",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "15.2",
+        "minDegC": "5.9",
+        "afDays": "1",
+        "rainMm": "66.2",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "16.1",
+        "minDegC": "8.7",
+        "afDays": "0",
+        "rainMm": "136.6",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "18.3",
+        "minDegC": "10.9",
+        "afDays": "0",
+        "rainMm": "98.0",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "19.9",
+        "minDegC": "11.3",
+        "afDays": "0",
+        "rainMm": "103.4",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "16.8",
+        "minDegC": "8.7",
+        "afDays": "0",
+        "rainMm": "116.2",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "12.4",
+        "minDegC": "4.4",
+        "afDays": "2",
+        "rainMm": "83.6",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "9.2",
+        "minDegC": "2.9",
+        "afDays": "6",
+        "rainMm": "124.8",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "6.6",
+        "minDegC": "1.1",
+        "afDays": "10",
+        "rainMm": "99.2",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "North West",
+    "regionCode": 16,
+    "station": "Newton Rigg",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "6.9",
+        "minDegC": "1.4",
+        "afDays": "10",
+        "rainMm": "78.8",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "6.8",
+        "minDegC": "1.3",
+        "afDays": "14",
+        "rainMm": "28.4",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "12.4",
+        "minDegC": "3.2",
+        "afDays": "2",
+        "rainMm": "19.4",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "10.2",
+        "minDegC": "2.2",
+        "afDays": "8",
+        "rainMm": "63.2",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "15.1",
+        "minDegC": "4.5",
+        "afDays": "3",
+        "rainMm": "82.2",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "15.3",
+        "minDegC": "8.3",
+        "afDays": "0",
+        "rainMm": "157.4",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "17.7",
+        "minDegC": "10.2",
+        "afDays": "0",
+        "rainMm": "99.0",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "18.8",
+        "minDegC": "10.5",
+        "afDays": "0",
+        "rainMm": "97.8",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "15.4",
+        "minDegC": "8.2",
+        "afDays": "1",
+        "rainMm": "113.6",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "11.3",
+        "minDegC": "3.1",
+        "afDays": "7",
+        "rainMm": "103.2",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "8.3",
+        "minDegC": "2.6",
+        "afDays": "6",
+        "rainMm": "108.2",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "6.0",
+        "minDegC": "0.6",
+        "afDays": "11",
+        "rainMm": "148.4",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "North Scotland",
+    "regionCode": 17,
+    "station": "Nairn",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "6.9",
+        "minDegC": "1.0",
+        "afDays": "10",
+        "rainMm": "68.5",
+        "sunHours": "73.6"
+      },
+      "2": {
+        "maxDegC": "9.3",
+        "minDegC": "2.1",
+        "afDays": "8",
+        "rainMm": "22.1",
+        "sunHours": "78.3"
+      },
+      "3": {
+        "maxDegC": "13.0",
+        "minDegC": "4.2",
+        "afDays": "4",
+        "rainMm": "5.2",
+        "sunHours": "159.7"
+      },
+      "4": {
+        "maxDegC": "9.2",
+        "minDegC": "2.3",
+        "afDays": "6",
+        "rainMm": "102.5",
+        "sunHours": "100.0"
+      },
+      "5": {
+        "maxDegC": "13.8",
+        "minDegC": "4.6",
+        "afDays": "1",
+        "rainMm": "41.3",
+        "sunHours": "194.3"
+      },
+      "6": {
+        "maxDegC": "15.0",
+        "minDegC": "8.0",
+        "afDays": "0",
+        "rainMm": "54.9",
+        "sunHours": "100.5"
+      },
+      "7": {
+        "maxDegC": "17.0",
+        "minDegC": "9.9",
+        "afDays": "0",
+        "rainMm": "72.5",
+        "sunHours": "92.6"
+      },
+      "8": {
+        "maxDegC": "19.1",
+        "minDegC": "10.1",
+        "afDays": "0",
+        "rainMm": "56.2",
+        "sunHours": "150.4"
+      },
+      "9": {
+        "maxDegC": "14.8",
+        "minDegC": "8.0",
+        "afDays": "0",
+        "rainMm": "67.2",
+        "sunHours": "124.3"
+      },
+      "10": {
+        "maxDegC": "10.7",
+        "minDegC": "3.1",
+        "afDays": "5",
+        "rainMm": "61.0",
+        "sunHours": "84.3"
+      },
+      "11": {
+        "maxDegC": "8.9",
+        "minDegC": "1.9",
+        "afDays": "8",
+        "rainMm": "18.0",
+        "sunHours": "58.0"
+      },
+      "12": {
+        "maxDegC": "6.2",
+        "minDegC": "0.0",
+        "afDays": "14",
+        "rainMm": "48.1",
+        "sunHours": "35.5"
+      }
+    }
+  },
+  {
+    "region": "South Scotland",
+    "regionCode": 18,
+    "station": "Eskdalemuir",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "5.9",
+        "minDegC": "0.0",
+        "afDays": "11",
+        "rainMm": "164.0",
+        "sunHours": "43.6"
+      },
+      "2": {
+        "maxDegC": "6.0",
+        "minDegC": "0.4",
+        "afDays": "13",
+        "rainMm": "101.8",
+        "sunHours": "50.6"
+      },
+      "3": {
+        "maxDegC": "11.6",
+        "minDegC": "2.0",
+        "afDays": "11",
+        "rainMm": "58.2",
+        "sunHours": "128.6"
+      },
+      "4": {
+        "maxDegC": "9.2",
+        "minDegC": "1.1",
+        "afDays": "8",
+        "rainMm": "95.2",
+        "sunHours": "81.8"
+      },
+      "5": {
+        "maxDegC": "14.5",
+        "minDegC": "4.3",
+        "afDays": "6",
+        "rainMm": "82.2",
+        "sunHours": "183.4"
+      },
+      "6": {
+        "maxDegC": "14.4",
+        "minDegC": "7.3",
+        "afDays": "0",
+        "rainMm": "245.6",
+        "sunHours": "57.8"
+      },
+      "7": {
+        "maxDegC": "16.1",
+        "minDegC": "9.1",
+        "afDays": "0",
+        "rainMm": "203.0",
+        "sunHours": "60.0"
+      },
+      "8": {
+        "maxDegC": "18.0",
+        "minDegC": "9.9",
+        "afDays": "1",
+        "rainMm": "202.4",
+        "sunHours": "112.6"
+      },
+      "9": {
+        "maxDegC": "14.0",
+        "minDegC": "6.8",
+        "afDays": "2",
+        "rainMm": "169.4",
+        "sunHours": "91.2"
+      },
+      "10": {
+        "maxDegC": "10.2",
+        "minDegC": "2.3",
+        "afDays": "11",
+        "rainMm": "190.6",
+        "sunHours": "83.2"
+      },
+      "11": {
+        "maxDegC": "7.2",
+        "minDegC": "1.7",
+        "afDays": "11",
+        "rainMm": "239.2",
+        "sunHours": "44.3"
+      },
+      "12": {
+        "maxDegC": "5.1",
+        "minDegC": "-0.4",
+        "afDays": "15",
+        "rainMm": "243.6",
+        "sunHours": "36.6"
+      }
+    }
+  },
+  {
+    "region": "South East",
+    "regionCode": 19,
+    "station": "Cambridge",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "9.1",
+        "minDegC": "2.8",
+        "afDays": "7",
+        "rainMm": "39.0",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "7.0",
+        "minDegC": "0.1",
+        "afDays": "12",
+        "rainMm": "17.4",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "13.3",
+        "minDegC": "2.6",
+        "afDays": "5",
+        "rainMm": "23.4",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "12.2",
+        "minDegC": "3.9",
+        "afDays": "2",
+        "rainMm": "95.6",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "16.9",
+        "minDegC": "7.9",
+        "afDays": "0",
+        "rainMm": "42.6",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "18.5",
+        "minDegC": "10.4",
+        "afDays": "0",
+        "rainMm": "91.4",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "21.2",
+        "minDegC": "12.0",
+        "afDays": "0",
+        "rainMm": "101.4",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "23.5",
+        "minDegC": "12.9",
+        "afDays": "0",
+        "rainMm": "39.2",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "19.3",
+        "minDegC": "8.9",
+        "afDays": "0",
+        "rainMm": "30.0",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "13.5",
+        "minDegC": "6.9",
+        "afDays": "0",
+        "rainMm": "78.6",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "10.0",
+        "minDegC": "4.0",
+        "afDays": "2",
+        "rainMm": "71.0",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "8.1",
+        "minDegC": "2.1",
+        "afDays": "10",
+        "rainMm": "97.7",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "Southern",
+    "regionCode": 20,
+    "station": "Hurn",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "10.1",
+        "minDegC": "2.3",
+        "afDays": "11",
+        "rainMm": "48.2",
+        "sunHours": "70.4"
+      },
+      "2": {
+        "maxDegC": "8.4",
+        "minDegC": "0.4",
+        "afDays": "14",
+        "rainMm": "22.2",
+        "sunHours": "65.9"
+      },
+      "3": {
+        "maxDegC": "14.4",
+        "minDegC": "2.0",
+        "afDays": "7",
+        "rainMm": "36.0",
+        "sunHours": "168.8"
+      },
+      "4": {
+        "maxDegC": "12.7",
+        "minDegC": "2.8",
+        "afDays": "11",
+        "rainMm": "148.6",
+        "sunHours": "130.4"
+      },
+      "5": {
+        "maxDegC": "17.6",
+        "minDegC": "7.8",
+        "afDays": "1",
+        "rainMm": "35.0",
+        "sunHours": "188.2"
+      },
+      "6": {
+        "maxDegC": "17.8",
+        "minDegC": "11.3",
+        "afDays": "0",
+        "rainMm": "135.8",
+        "sunHours": "101.4"
+      },
+      "7": {
+        "maxDegC": "20.0",
+        "minDegC": "11.4",
+        "afDays": "0",
+        "rainMm": "137.4",
+        "sunHours": "148.2"
+      },
+      "8": {
+        "maxDegC": "21.2",
+        "minDegC": "13.1",
+        "afDays": "0",
+        "rainMm": "54.6",
+        "sunHours": "141.9"
+      },
+      "9": {
+        "maxDegC": "18.9",
+        "minDegC": "8.1",
+        "afDays": "0",
+        "rainMm": "85.8",
+        "sunHours": "167.1"
+      },
+      "10": {
+        "maxDegC": "14.4",
+        "minDegC": "7.4",
+        "afDays": "2",
+        "rainMm": "131.4",
+        "sunHours": "81.3"
+      },
+      "11": {
+        "maxDegC": "11.2",
+        "minDegC": "3.4",
+        "afDays": "7",
+        "rainMm": "132.4",
+        "sunHours": "66.8"
+      },
+      "12": {
+        "maxDegC": "9.9",
+        "minDegC": "2.0",
+        "afDays": "12",
+        "rainMm": "161.2",
+        "sunHours": "68.3"
+      }
+    }
+  },
+  {
+    "region": "South Wales",
+    "regionCode": 21,
+    "station": "Cardiff",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "9.6",
+        "minDegC": "3.8",
+        "afDays": "7",
+        "rainMm": "140.4",
+        "sunHours": "---"
+      },
+      "2": {
+        "maxDegC": "8.5",
+        "minDegC": "1.7",
+        "afDays": "11",
+        "rainMm": "35.8",
+        "sunHours": "---"
+      },
+      "3": {
+        "maxDegC": "13.9",
+        "minDegC": "4.6",
+        "afDays": "2",
+        "rainMm": "27.2",
+        "sunHours": "---"
+      },
+      "4": {
+        "maxDegC": "12.5",
+        "minDegC": "4.4",
+        "afDays": "1",
+        "rainMm": "160.0",
+        "sunHours": "---"
+      },
+      "5": {
+        "maxDegC": "17.4",
+        "minDegC": "8.5",
+        "afDays": "0",
+        "rainMm": "66.8",
+        "sunHours": "---"
+      },
+      "6": {
+        "maxDegC": "17.9",
+        "minDegC": "11.6",
+        "afDays": "0",
+        "rainMm": "180.8",
+        "sunHours": "---"
+      },
+      "7": {
+        "maxDegC": "20.1",
+        "minDegC": "11.9",
+        "afDays": "0",
+        "rainMm": "123.2",
+        "sunHours": "---"
+      },
+      "8": {
+        "maxDegC": "20.9",
+        "minDegC": "13.8",
+        "afDays": "0",
+        "rainMm": "117.4",
+        "sunHours": "---"
+      },
+      "9": {
+        "maxDegC": "17.9",
+        "minDegC": "9.2",
+        "afDays": "0",
+        "rainMm": "94.6",
+        "sunHours": "---"
+      },
+      "10": {
+        "maxDegC": "13.9",
+        "minDegC": "7.0",
+        "afDays": "1",
+        "rainMm": "158.2",
+        "sunHours": "---"
+      },
+      "11": {
+        "maxDegC": "10.9",
+        "minDegC": "4.0",
+        "afDays": "4",
+        "rainMm": "162.6",
+        "sunHours": "---"
+      },
+      "12": {
+        "maxDegC": "9.4",
+        "minDegC": "2.5",
+        "afDays": "12",
+        "rainMm": "229.4",
+        "sunHours": "---"
+      }
+    }
+  },
+  {
+    "region": "South West",
+    "regionCode": 22,
+    "station": "Yeovilton",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "9.7",
+        "minDegC": "2.8",
+        "afDays": "10",
+        "rainMm": "43.8",
+        "sunHours": "68.9"
+      },
+      "2": {
+        "maxDegC": "8.3",
+        "minDegC": "0.8",
+        "afDays": "12",
+        "rainMm": "18.0",
+        "sunHours": "79.2"
+      },
+      "3": {
+        "maxDegC": "13.6",
+        "minDegC": "2.8",
+        "afDays": "4",
+        "rainMm": "22.8",
+        "sunHours": "175.7"
+      },
+      "4": {
+        "maxDegC": "12.1",
+        "minDegC": "2.8",
+        "afDays": "8",
+        "rainMm": "136.6",
+        "sunHours": "128.3"
+      },
+      "5": {
+        "maxDegC": "17.1",
+        "minDegC": "7.4",
+        "afDays": "0",
+        "rainMm": "33.6",
+        "sunHours": "194.1"
+      },
+      "6": {
+        "maxDegC": "17.7",
+        "minDegC": "11.0",
+        "afDays": "0",
+        "rainMm": "118.2",
+        "sunHours": "107.1"
+      },
+      "7": {
+        "maxDegC": "20.0",
+        "minDegC": "11.5",
+        "afDays": "0",
+        "rainMm": "94.2",
+        "sunHours": "161.2"
+      },
+      "8": {
+        "maxDegC": "20.7",
+        "minDegC": "13.6",
+        "afDays": "0",
+        "rainMm": "105.8",
+        "sunHours": "139.6"
+      },
+      "9": {
+        "maxDegC": "18.0",
+        "minDegC": "9.0",
+        "afDays": "0",
+        "rainMm": "46.4",
+        "sunHours": "157.1"
+      },
+      "10": {
+        "maxDegC": "14.0",
+        "minDegC": "7.2",
+        "afDays": "2",
+        "rainMm": "93.6",
+        "sunHours": "76.1"
+      },
+      "11": {
+        "maxDegC": "10.6",
+        "minDegC": "3.5",
+        "afDays": "6",
+        "rainMm": "138.6",
+        "sunHours": "66.8"
+      },
+      "12": {
+        "maxDegC": "9.7",
+        "minDegC": "2.7",
+        "afDays": "7",
+        "rainMm": "135.0",
+        "sunHours": "67.7"
+      }
+    }
+  },
+  {
+    "region": "Yorkshire",
+    "regionCode": 23,
+    "station": "Whitby",
+    "year": 2012,
+    "monthlyData": {
+      "1": {
+        "maxDegC": "7.9",
+        "minDegC": "2.2",
+        "afDays": "6",
+        "rainMm": "32.3",
+        "sunHours": "85.2"
+      },
+      "2": {
+        "maxDegC": "8.3",
+        "minDegC": "2.0",
+        "afDays": "11",
+        "rainMm": "16.0",
+        "sunHours": "93.2"
+      },
+      "3": {
+        "maxDegC": "13.1",
+        "minDegC": "4.0",
+        "afDays": "1",
+        "rainMm": "22.3",
+        "sunHours": "203.2"
+      },
+      "4": {
+        "maxDegC": "10.2",
+        "minDegC": "3.9",
+        "afDays": "2",
+        "rainMm": "135.6",
+        "sunHours": "127.4"
+      },
+      "5": {
+        "maxDegC": "13.2",
+        "minDegC": "6.3",
+        "afDays": "1",
+        "rainMm": "55.6",
+        "sunHours": "178.0"
+      },
+      "6": {
+        "maxDegC": "16.5",
+        "minDegC": "9.5",
+        "afDays": "0",
+        "rainMm": "97.0",
+        "sunHours": "137.1"
+      },
+      "7": {
+        "maxDegC": "18.9",
+        "minDegC": "11.4",
+        "afDays": "0",
+        "rainMm": "72.0",
+        "sunHours": "176.0"
+      },
+      "8": {
+        "maxDegC": "20.4",
+        "minDegC": "11.9",
+        "afDays": "0",
+        "rainMm": "61.5",
+        "sunHours": "169.6"
+      },
+      "9": {
+        "maxDegC": "17.5",
+        "minDegC": "9.1",
+        "afDays": "0",
+        "rainMm": "82.8",
+        "sunHours": "175.9"
+      },
+      "10": {
+        "maxDegC": "12.4",
+        "minDegC": "5.4",
+        "afDays": "1",
+        "rainMm": "61.4",
+        "sunHours": "132.4"
+      },
+      "11": {
+        "maxDegC": "9.6",
+        "minDegC": "3.6",
+        "afDays": "1",
+        "rainMm": "137.2",
+        "sunHours": "71.5"
+      },
+      "12": {
+        "maxDegC": "7.2",
+        "minDegC": "1.8",
+        "afDays": "9",
+        "rainMm": "109.2",
+        "sunHours": "53.2"
+      }
+    }
+  }
+]

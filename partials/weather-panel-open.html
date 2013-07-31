@@ -1,0 +1,45 @@
+
+<div ng-controller="WeatherTrendsController">
+  <div class="row-fluid">
+    <highchart id="chart1" style="height: 400px;" series="chart.series" title="chart.title" options="chart.options" xAxis="chart.xAxis" yAxis="chart.yAxis" class="span12"></highchart>
+    <p class="pull-right hidden-phone"><small>Regional climatic data for 2012 provided by the&nbsp;<a href="http://www.metoffice.gov.uk/climate/uk/stationdata/" target="_blank">Met Office</a>; source station: {{weatherStationName}}</small></p>
+  </div>
+  <section>
+    <div style="position: relative;" class="row-fluid">
+      <h3 class="pull-left">Month of peak usage</h3>
+    </div>
+    <div class="row-fluid">
+      <p><span><i class="icon-info-sign"></i> You used<span ng-show="myHighestGasConsumption &gt; 0"> the most gas in<span class="capitalize"> {{principalConsumptionMonthGas}}</span><span class="visible-desktop"> ({{myHighestGasConsumption}} kWh)</span><span ng-show="myHighestElecConsumption &gt; 0"> and</span></span><span ng-show="myHighestElecConsumption &gt; 0"> the most electricity in<span class="capitalize"> {{principalConsumptionMonthElec}}</span><span class="visible-desktop"> ({{myHighestElecConsumption}} kWh)</span></span>.</span></p>
+      <ul class="month-display-gauge clearfix">
+        <li peak-consumption-month-circle="peak-consumption-month-circle" ng-repeat="month in months" class="span1 hidden-phone"><span class="capitalize">{{month}}</span></li>
+      </ul>
+      <p class="pull-right hidden-phone"><small>Peak usage data provided by the&nbsp;<a href="http://www.thedeveloperchallenge.com/" target="_blank">npower Developer Challenge</a></small></p>
+    </div>
+  </section>
+  <section>
+    <div style="position: relative;" class="row-fluid">
+      <h3 class="pull-left">Houses in your area</h3>
+      <h3 class="pull-right pointers hidden-phone"><span class="pointer-left">Less insulated</span><span class="pointer-right">More insulated</span></h3>
+      <div class="sidebar-month-selector well">
+        <p>{{getMonth()}}</p>
+        <button ng-click="prevMonth()" ng-disabled="getMonth() == &quot;jan&quot;" class="btn pull-left"><</button>
+        <button ng-click="nextMonth()" ng-disabled="getMonth() == &quot;dec&quot;" class="btn pull-left">></button>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12 horizontal-scroller">
+        <ul style="max-height: 25em" class="span12">
+          <li ng-repeat="otherHouse in housesOfSamePostcodeArea" ng-class="getHouseSizeClass(otherHouse)" title="{{otherHouse.wallType}}" class="insulated-house">
+            <svg viewBox="0 0 567 628" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <path fill="none" stroke="#000000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" d="m554.796326,247.63858l0.015686,91.423492l-34.185059,-27.355682l0,306.41861l-474.68399,0l0,-311.901123l-36.942972,32.838196l1.883913,-91.827362l31.93541,-31.285492l0.397297,0l0,-175.096397l57.43626,0l0,128.381874l180.579704,-157.023449l273.563751,235.427334z"></path>
+              </g>
+            </svg>
+            <div ng-style="{height:percentageOfMax(&quot;elec&quot;, otherHouse.elecConsumption[getMonth()], 72)+&quot;%&quot;}" title="{{otherHouse.elecConsumption[getMonth()]}} kWh" class="consumption-elec"></div>
+            <div ng-style="{height:percentageOfMax(&quot;gas&quot;, otherHouse.gasConsumption[getMonth()], 72)+&quot;%&quot;}" title="{{otherHouse.gasConsumption[getMonth()]}} kWh" class="consumption-gas"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

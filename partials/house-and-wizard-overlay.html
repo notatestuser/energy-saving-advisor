@@ -1,0 +1,228 @@
+
+<div class="holohouse-wrapper">
+  <div class="row-fluid"><img src="/img/isometric-house.svg" class="offset2 span8 wizard-backdrop hidden-phone"/></div>
+  <div data-step="1" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>Where do you live in the UK?</h4>
+        </div>
+        <div class="modal-body">
+          <p>Enter your postcode</p>
+          <input type="text" data-provide="typeahead" ng-model="house.description" ng-disabled="house.foundViaWebService" class="input-block-level postcode-typeahead-box"/>
+          <p ng-class="{in: regionName}" class="collapsing-notice collapse"><i class="icon-home"></i><span class="region-affirmation"> You are living in the {{regionName}} region<span class="visible-desktop"> of the UK</span></span></p>
+        </div>
+        <div class="modal-footer">
+          <div class="pull-left visible-desktop"><a href="javascript:void(0)" data-toggle="popover" data-placement="bottom" data-content="This housing data was part of an app competition. We don't send anything to anyone. Ever." title="" data-title="Privacy information" class="privacy-information-link"><i class="icon-info-sign"></i><small> Why are you asking?</small></a></div>
+          <button ng-click="showStep(2)" ng-disabled="!house.foundViaWebService" class="btn btn-primary">Next step &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-step="2" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>About your home</h4>
+        </div>
+        <div class="modal-body">
+          <div ng-show="house.foundViaWebService" class="alert alert-info">The information below is pre-filled.</div>
+          <fieldset>
+            <label for="propertyType">How would you describe the property type?</label>
+            <select id="propertyType" ng-model="house.propertyType" ng-disabled="house.foundViaWebService" class="input-block-level">
+              <option value="Flat">Flat</option>
+              <option value="Bungalow">Bungalow</option>
+              <option value="Terraced">Terraced</option>
+              <option value="Semi-detached">Semi-detached</option>
+              <option value="Detached">Detached</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="propertyBuilt">When was the property built?</label>
+            <select id="propertyBuilt" ng-model="house.propertyBuilt" ng-disabled="house.foundViaWebService" class="input-block-level">
+              <option value="pre 1870">Before 1870</option>
+              <option value="1871-1919">Between 1871 and 1919</option>
+              <option value="1871 - 1919">Between 1871 and 1919</option>
+              <option value="1920 - 1945">Between 1920 and 1945</option>
+              <option value="1920 - 1945">Between 1920 and 1945</option>
+              <option value="1946 - 1954">Between 1946 and 1954</option>
+              <option value="1955 - 1979">Between 1955 and 1979</option>
+              <option value="post 1980">After 1980</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="bedrooms">How many bedrooms does your property have?</label>
+            <select id="bedrooms" ng-model="house.bedrooms" ng-disabled="house.foundViaWebService" class="input-block-level">
+              <option value="1 to 2">Between 1 and 2</option>
+              <option value="3">Exactly 3</option>
+              <option value="4 +">4 or more</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="loftInsulation">Loft insulation installed</label>
+            <select id="loftInsulation" ng-model="house.loftInsulation" ng-disabled="house.foundViaWebService" class="input-block-level">
+              <option value="Loft Insulation Between 0 and 50mm">Insulated with less than 50mm</option>
+              <option value="Loft Insulation Between 50 and 150mm">Insulated with between 50 and 150mm</option>
+              <option value="Loft Insulation More Than 150mm">Insulated with more than 150mm</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button ng-click="showStep(3)" class="btn btn-primary">Next step &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-step="3" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>How do you light your house?</h4>
+        </div>
+        <div class="modal-body hidden-phone">
+          <svg width="656" height="1000" viewbox="273 350 230 200" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 75; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+            </g>
+            <g>
+              <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 10; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 7.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+              <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <label class="radio">
+              <input type="radio" name="bulb-types" value="incandescent" ng-model="stuff.lighting"/><span>Our lights are fitted with the old incandescent kind of bulb.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="bulb-types" value="fluorescent" ng-model="stuff.lighting"/><span>Our lights are fitted with "energy saving" fluorescent bulbs.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="bulb-types" value="led" ng-model="stuff.lighting"/><span>Our lights are fitted with new LED bulbs.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="bulb-types" value="n/a" checked="checked" ng-model="stuff.lighting"/><span>I don't know.</span>
+            </label>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button ng-click="showStep(2)" class="btn">&laquo; Back</button>
+          <button ng-click="showStep(4)" class="btn btn-primary">Next step &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-step="4" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>Do you have a television?</h4>
+        </div>
+        <div class="modal-body hidden-phone">
+          <svg width="302.31677" height="236.03534" viewbox="0 0 302.31677 236.03534" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-237.41305,-545.77308)">
+              <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+              <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+              <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+              <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 75; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+            </g>
+            <g transform="translate(-237.41305,-545.77308)">
+              <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 307.22283,762.57356 c -7.60311,3.65585 -7.15124,12.26679 -7.08411,17.4097 67.62557,1.40944 112.27716,0.9362 178.32029,-0.83361 -0.0327,-7.16535 -0.89025,-15.72713 -7.50084,-17.4097 z"></path>
+              <path style="fill: none; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+              <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+              <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 7.5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <label class="checkbox">
+              <input type="checkbox" name="television-types" ng-model="stuff.television.plasma"/><span>Yes, we have at least one plasma flat screen.</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="television-types" ng-model="stuff.television.lcd"/><span>Yes, we have at least one LCD flat screen.</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="television-types" ng-model="stuff.television.crt"/><span>Yes, we have at least one CRT "box" screen.</span>
+            </label>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button ng-click="showStep(3)" class="btn">&laquo; Back</button>
+          <button ng-click="showStep(5)" class="btn btn-primary">Next step &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-step="5" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>When switching off for the day or night...</h4>
+        </div>
+        <div class="modal-body hidden-phone">
+          <svg width="552.6933" height="741.10498" viewbox="0 0 552.6933 741.10498" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <g transform="translate(-89.199978,-77.523978)">
+              <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+              <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="m 368.9905,783.33819 -0.36575,-173.2671" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="m 370.18281,286.08183 -0.36575,-173.2671" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+            </g>
+            <g transform="translate(-89.199978,-77.523978)">
+              <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #000000; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+              <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="m 368.9905,783.33819 -0.36575,-173.2671" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+              <path d="m 370.18281,286.08183 -0.36575,-173.2671" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <label class="radio">
+              <input type="radio" name="standby" value="always-on" ng-model="stuff.standby" checked="checked"/><span>Our electronics are left on.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="standby" value="standby" ng-model="stuff.standby"/><span>Our electronics are put into a standby mode.</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="standby" value="off" ng-model="stuff.standby"/><span>We use a timer switch or items are turned off at the mains.</span>
+            </label>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <button ng-click="showStep(4)" class="btn">&laquo; Back</button>
+          <button ng-click="showStep(6)" class="btn btn-primary">Next step &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-step="6" class="row-fluid overlay wizard-step">
+    <div class="offset1 span8">
+      <div class="offset3 span9 modal">
+        <div class="modal-header">
+          <h4>That's all!</h4>
+        </div>
+        <div class="modal-body">
+          <h4>You've completed all of the wizard's steps.</h4>
+          <p class="hidden-desktop">Swipe down to see the next section.</p>
+          <p class="visible-desktop">Please scroll down to see the next section.</p>
+        </div>
+        <div class="modal-footer">
+          <button onclick="window.location.reload()" class="btn">Start again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

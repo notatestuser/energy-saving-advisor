@@ -1,0 +1,196 @@
+
+<div ng-controller="AdviceController">
+  <section class="advice-breakdown clearfix">
+    <div class="row-fluid">
+      <div class="span4">
+        <h3><span><i class="icon-exclamation-sign"></i> Actions to take</span></h3>
+        <ul class="advice-item-list">
+          <li ng-show="shouldShowOfgemUsageInFirstColumn(house)">
+            <div>
+              <div class="alert"><span>
+                  Your yearly {{getOfgemUsageRankEnergies(house)}} usage exceeds Ofgem's typical figures
+                   for a "{{getOfgemUsageRankBand(house)}}" usage household.</span></div>
+              <p>These guide figures represent the amount of energy that a typical household, with a<strong> {{getOfgemUsageRankBand(house)}}</strong> level of energy consumption, uses in a year.
+                 They offer a look at how your usage figures compare with the average.
+              </p>
+              <table class="table ofgem-typicals-comparison-table">
+                <thead>
+                  <tr>
+                    <td></td>
+                    <th>Electricity</th>
+                    <th>Gas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>Your home</em></td>
+                    <td ng-class="{okay: house.electricityKwh &lt; getOfgemTypicalUsageForBand( &quot;elec&quot;, getOfgemUsageRankBand(house) )}" class="our-value">{{house.electricityKwh}} kWh</td>
+                    <td ng-class="{okay: house.gasKwh &lt; getOfgemTypicalUsageForBand( &quot;gas&quot;, getOfgemUsageRankBand(house) )}" class="our-value">{{house.gasKwh}} kWh</td>
+                  </tr>
+                  <tr>
+                    <td><em>Guide ({{getOfgemUsageRankBand(house)}})</em></td>
+                    <td>{{getOfgemTypicalUsageForBand( 'elec', getOfgemUsageRankBand(house) )}} kWh</td>
+                    <td>{{getOfgemTypicalUsageForBand( 'gas', getOfgemUsageRankBand(house)  )}} kWh</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p ng-show="getOfgemUsageRankBand(house) == &quot;low&quot;">Exceeding the "low" usage threshold is generally nothing to be concerned about.</p>
+              <aside ng-show="getOfgemUsageRankBand(house) == &quot;high&quot;">
+                <p>
+                  As your usage appears to be particularly high, you should consider limiting use of
+                   the lighting and appliances that may be consuming a lot of power.
+                </p>
+                <p class="well"><i class="icon-check"></i> Action to take: Monitor and regulate {{getOfgemUsageRankEnergies(house)}} usage.</p>
+              </aside><small class="pull-right">Source:<a href="http://www.ofgem.gov.uk/Media/FactSheets/Documents1/domestic%20energy%20consump%20fig%20FS.pdf" target="_blank"> Typical domestic energy consumption figures</a>, Ofgem</small>
+            </div>
+          </li>
+          <li ng-show="getLoftInsulationRank(house) &gt; 1">
+            <div>
+              <div ng-switch="getLoftInsulationRank(house)" class="alert"><span ng-switch-when="3">You have less than 50mm loft insulation.</span><span ng-switch-when="2">You have less than 150mm loft insulation.</span></div>
+              <p>
+                Having sufficient loft insulation of up to 270mm can provide annual savings
+                 of up to <strong>&pound;180</strong> with an opportunity to get
+                 <strong>&pound;100 cashback</strong> with the government's Green Deal scheme.
+              </p>
+              <p class="well"><i class="icon-check"></i> Action to take: Add some loft insulation.</p><small class="pull-right">Source:<a href="http://www.est.org.uk/Insulation/Cavity-wall-insulation" target="_blank"> Energy Saving Trust</a></small>
+            </div>
+          </li>
+          <li ng-show="getWallInsulationRank(house) &gt; 2">
+            <div>
+              <div class="alert"><span>Your house has a solid wall.</span></div>
+              <p>
+                Solid walled houses were generally built in the 1930’s or before and have no insulation.
+                 Therefore, they can be expensive to heat. Cavity wall insulation is not an option but you
+                 may still consider internal or external wall insulation to save up to<strong> &pound;490</strong> annually.
+              </p>
+              <p class="well"><i class="icon-check"></i> Action to take: Install external wall insulation.</p><small class="pull-right">Source:<a href="http://www.est.org.uk/Insulation/Solid-wall-insulation" target="_blank"> Energy Saving Trust</a></small>
+            </div>
+          </li>
+          <li ng-show="getWallInsulationRank(house) == 2">
+            <div>
+              <div class="alert"><span>Your cavity wall is not insulated.</span></div>
+              <p>Filling your cavity wall with insulation can be an inexpensive way to save up to<strong> &pound;140</strong> on your energy bills each year.
+                 Some walls are not suitable; please check with an insulation installer.
+              </p>
+              <p class="well"><i class="icon-check"></i> Action to take: Add cavity wall insulation.</p><small class="pull-right">Source:<a href="http://www.est.org.uk/Insulation/Cavity-wall-insulation" target="_blank"> Energy Saving Trust</a></small>
+            </div>
+          </li>
+          <li ng-show="householdStuff.lighting == &quot;incandescent&quot;">
+            <div>
+              <div class="alert"><span>Incandescent bulbs consume excess energy.</span></div>
+              <p>
+                Other bulbs may cost more to purchase but they last much longer and don't have
+                 to be replaced as often.
+              </p>
+              <p>
+                If used for 4 hours per day a fluorescent bulb will cost around &pound;8.80 less
+                 than an incandescent one over a period of three years.
+              </p>
+              <p class="well"><i class="icon-check"></i> Action to take: Replace incandescent bulbs with fluorescent or LED ones.</p><small class="pull-right">Source:<a href="http://www-g.eng.cam.ac.uk/impee/topics/DomesticEnergy/files/Domestic%20Energy%20v2%20PDF%20WITH%20NOTES.pdf" target="_blank"> The ImpEE Project</a></small>
+            </div>
+          </li>
+          <li ng-show="householdStuff.standby &amp;&amp; householdStuff.standby != &quot;off&quot;">
+            <div>
+              <div ng-switch="householdStuff.standby" class="alert"><span ng-switch-when="always-on">Leaving electronics on consumes energy.</span><span ng-switch-when="standby">  Leaving electronics in standby consumes energy.</span></div>
+              <p>
+                The UK uses enough standby power to power 400,000 homes. Cheap timer plugs are
+                 an investment worth considering for set-top boxes and other large audio-visual equipment.
+              </p>
+              <p>
+                A typical timer may be programmed to put an attached device into standby mode only at
+                 selected times of the day and could cost as little as &pound;5.00 to purchase.
+              </p>
+              <p class="well"><i class="icon-check"></i> Action to take: Attach timer plugs to audio-visual equipment.</p><small class="pull-right">Source:<a href="http://www-g.eng.cam.ac.uk/impee/topics/DomesticEnergy/files/Domestic%20Energy%20v2%20PDF%20WITH%20NOTES.pdf" target="_blank"> The ImpEE Project</a></small>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="span4">
+        <h3><span><i class="icon-info-sign"></i> Information</span></h3>
+        <ul class="advice-item-list">
+          <li ng-show="shouldShowOfgemUsageInSecondColumn(house)">
+            <div>
+              <div class="alert alert-info"><span>
+                  Your yearly {{getOfgemUsageRankEnergies(house)}} usage exceeds Ofgem's typical figures
+                   for a "{{getOfgemUsageRankBand(house)}}" usage household.</span></div>
+              <p>These guide figures represent the amount of energy that a typical household, with a<strong> {{getOfgemUsageRankBand(house)}}</strong> level of energy consumption, uses in a year.
+                 They offer a look at how your usage figures compare with the average.
+              </p>
+              <table class="table ofgem-typicals-comparison-table">
+                <thead>
+                  <tr>
+                    <td></td>
+                    <th>Electricity</th>
+                    <th>Gas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>Your home</em></td>
+                    <td ng-class="{okay: house.electricityKwh &lt; getOfgemTypicalUsageForBand( &quot;elec&quot;, getOfgemUsageRankBand(house) )}" class="our-value">{{house.electricityKwh}} kWh</td>
+                    <td ng-class="{okay: house.gasKwh &lt; getOfgemTypicalUsageForBand( &quot;gas&quot;, getOfgemUsageRankBand(house) )}" class="our-value">{{house.gasKwh}} kWh</td>
+                  </tr>
+                  <tr>
+                    <td><em>Guide ({{getOfgemUsageRankBand(house)}})</em></td>
+                    <td>{{getOfgemTypicalUsageForBand( 'elec', getOfgemUsageRankBand(house) )}} kWh</td>
+                    <td>{{getOfgemTypicalUsageForBand( 'gas', getOfgemUsageRankBand(house)  )}} kWh</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p ng-show="getOfgemUsageRankBand(house) == &quot;low&quot;">Exceeding the "low" usage threshold is generally nothing to be concerned about.</p>
+              <aside ng-show="getOfgemUsageRankBand(house) == &quot;high&quot;">
+                <p>
+                  As your usage appears to be particularly high, you should consider limiting use of
+                   the lighting and appliances that may be consuming a lot of power.
+                </p>
+                <p class="well"><i class="icon-check"></i> Action to take: Monitor and regulate {{getOfgemUsageRankEnergies(house)}} usage.</p>
+              </aside><small class="pull-right">Source:<a href="http://www.ofgem.gov.uk/Media/FactSheets/Documents1/domestic%20energy%20consump%20fig%20FS.pdf" target="_blank"> Typical domestic energy consumption figures</a>, Ofgem</small>
+            </div>
+          </li>
+          <li ng-show="getHouseTypeCostRank(house) &gt; 2">
+            <div>
+              <div ng-switch="getHouseTypeCostRank(house)" class="alert alert-info"><span ng-switch-when="3">Bungalows can be more expensive to heat.</span><span ng-switch-when="4">Semi-detached houses can be more expensive to heat.</span><span ng-switch-when="5">Detached houses can be more expensive to heat.</span></div>
+              <p>
+                Consumer surveys have shown that, on average, your type of house can be more
+                expensive to heat than a flat or terraced property if appropriate care is
+                not taken.
+              </p><small class="pull-right">Source: Energywatch and<a href="http://www.home-save.co.uk/energy/" target="_blank"> Home Save</a></small>
+            </div>
+          </li>
+          <li ng-show="isHouseCentrallyHeated(house)">
+            <div>
+              <div class="alert alert-info"><span>A centrally-heated home can be more expensive to heat.</span></div>
+              <p><em>
+                  "A centrally‐heated home uses around twice as much energy for heating as an
+                  identical home with heating only in the living room."</em></p>
+              <p>
+                Managing your central-heating effectively can potentially save a lot of energy
+                that would otherwise be spent on heating unused space.
+              </p><small class="pull-right">Source:<a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/48195/3224-great-britains-housing-energy-fact-file-2011.pdf" target="_blank"> Great Britain's housing energy fact file</a>, DECC</small>
+            </div>
+          </li>
+          <li ng-show="getHouseRoomsRank(house) &gt; 1">
+            <div>
+              <div class="alert alert-info"><span>Your house has {{house.bedrooms}} bedrooms.</span></div>
+              <p>
+                Switching off radiators and closing windows in unused rooms will help to ensure
+                 that heat is only generated for rooms where it is needed.
+              </p><small class="pull-right">Source:<a href="http://www.uswitch.com/energy-saving/guides/energy-doctor/#step7" target="_blank"> The Energy Doctor</a>, uSwitch</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="span4">
+        <h3><span><i class="icon-book"></i> Further reading</span></h3>
+        <ul class="further-reading-list">
+          <li class="well"><a href="https://www.gov.uk/green-deal-energy-saving-measures/how-the-green-deal-works" target="_blank">Green Deal: energy saving for your home</a><i tooltip="tooltip" title="Recommended" class="icon-star"></i></li>
+          <li class="well"><a href="http://www.npower.com/Home/energy-efficiency/saving-energy/energy-saving-tips/" target="_blank">Our top energy saving tips, npower</a><i tooltip="tooltip" title="Recommended" class="icon-star"></i></li>
+          <li class="well"><a href="http://www-g.eng.cam.ac.uk/impee/?section=topics&amp;topic=DomesticEnergy" target="_blank">Domestic Energy Use, The ImpEE Project</a></li>
+          <li class="well"><a href="https://www.gov.uk/government/organisations/department-of-energy-climate-change" target="_blank">Department of Energy &amp; Climate Change</a></li>
+          <li class="well"><a href="http://www.theguardian.com/npower-energy-efficiency" target="_blank">Energy efficiency, npower</a></li>
+          <li class="well"><a href="http://www.energysavingtrust.org.uk/" target="_blank">Energy Saving Trust</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

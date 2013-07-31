@@ -1,0 +1,256 @@
+
+<div ng-controller="FootprintController">
+  <section class="household-item-breakdown clearfix">
+    <div class="row-fluid">
+      <div id="householdCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#householdCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#householdCarousel" data-slide-to="1"></li>
+          <li data-target="#householdCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="active item">
+            <div class="offset3 span6">
+              <h3>Lighting</h3>
+              <dl class="timeline lighting-list">
+                <dt ng-class="getItemSelectedClass('lighting', 'led')">
+                  <svg width="656" height="1000" viewbox="273 350 230 200" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 75; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 10; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 7.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                  </svg><span>Light Emitting Diode (LED)</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('lighting', 'led')" data-efficiency="3">
+                  <p><i class="icon-power-off"></i>Typically 8W<br/><i class="icon-time"></i>50,000 hours<br/><i class="icon-gbp"></i>&pound;5.95 per bulb</p>
+                  <p class="role">
+                    Previously considered to be quite pricey for a light bulb, LED lamps are gaining traction as
+                     inexpensive replacements for their less efficient counterparts.
+                     Their light is whiter and much more ecologically friendly.
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('lighting', 'fluorescent')">
+                  <svg width="656" height="1000" viewbox="273 350 230 200" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 75; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 10; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 7.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                  </svg><span>Fluorescent</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('lighting', 'fluorescent')" data-efficiency="2">
+                  <p><i class="icon-power-off"></i>Typically 23W<br/><i class="icon-time"></i>10,000 hours<br/><i class="icon-gbp"></i>&pound;3.99 per bulb</p>
+                  <p class="role">
+                    Though strange in appearance after the long legacy of the incandescent, the fluorescent
+                     bulb was the first to bring cheap and efficient lighting to the home.
+                     It is now beginning to lose its reputation as an energy saver.
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('lighting', 'incandescent')">
+                  <svg width="656" height="1000" viewbox="273 350 230 200" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 75; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #fafafa; stroke-width: 38; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                    <g>
+                      <path d="M 388.99911,281.12 C 291.90552,279.88528 277.65019,371.81558 279.44608,396.95883 C 281.24769,422.18177 288.48073,436.44572 312.67115,468.79687 C 331.3041,493.71568 339.61035,486.55985 339.61041,542.4309 C 339.61041,550.51266 344.10033,558.59442 344.10033,558.59442 C 344.10033,558.59442 362.95783,576.55394 386.30519,575.65597 C 409.65255,574.758 431.20395,560.39037 432.99995,551.41063 C 434.79585,542.4309 434.69925,522.43276 441.08165,498.4301 C 444.72565,484.72612 488.19925,445.60557 494.96025,411.32646 C 502.11825,375.03383 486.99065,282.35471 388.99911,281.12 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 10; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 429.64841,558.86087 C 429.64841,558.86087 417.85235,580.48697 386.39627,579.17625 C 354.94015,577.86559 344.01792,559.51622 344.01792,559.51622 C 344.01792,559.51622 342.93975,563.77594 344.67325,568.47251 C 343.45776,571.09383 343.65279,575.19127 345.27237,578.7394 C 344.01792,582.64118 344.12394,586.56597 346.20236,589.44319 C 345.62558,594.43482 345.12569,596.96081 352.11592,603.95102 C 359.10614,610.94129 374.60022,618.05951 386.83316,617.18575 C 399.06606,616.31194 424.73303,611.87533 429.64841,592.28302 C 430.64714,588.30218 429.64841,585.72961 429.64841,585.72961 C 429.64841,585.72961 432.05135,582.45293 429.64841,578.95785 C 431.61445,574.80736 430.52219,571.53074 429.42997,569.56472 C 431.39595,566.72494 430.52219,561.48219 429.64841,558.86087 z " style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 7.5; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 344.49051,571.37829 C 344.49051,571.37829 361.44865,593.42559 384.9551,592.93773 C 402.60286,592.57146 421.92157,586.09525 430.56226,572.09593" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                      <path d="M 346.13001,582.31336 C 346.13001,582.31336 356.84429,605.37017 386.92835,605.31959 C 417.5512,605.2671 429.69511,582.91329 429.69511,582.91329" style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: #000000; stroke-width: 3.83125; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"></path>
+                    </g>
+                  </svg><span>Incandescent</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('lighting', 'incandescent')" data-efficiency="1">
+                  <p><i class="icon-power-off"></i>Typically 100W<br/><i class="icon-time"></i>750 hours<br/><i class="icon-gbp"></i>&pound;0.45 per bulb</p>
+                  <p class="role">
+                    With its screw fitting named after Thomas Edison, the incandescent lamp was where it all started.
+                     These days most incandescent bulbs convert less than 5% of the energy they use into visible light.
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="item">
+            <div class="offset3 span6">
+              <h3>Electronics</h3>
+              <dl class="timeline television-list">
+                <dt ng-class="getItemSelectedClass('television', 'lcd')">
+                  <svg width="302.31677" height="236.03534" viewbox="0 0 302.31677 236.03534" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 75; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 307.22283,762.57356 c -7.60311,3.65585 -7.15124,12.26679 -7.08411,17.4097 67.62557,1.40944 112.27716,0.9362 178.32029,-0.83361 -0.0327,-7.16535 -0.89025,-15.72713 -7.50084,-17.4097 z"></path>
+                      <path style="fill: none; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 7.5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                  </svg><span>Liquid Crystal Display</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('television', 'lcd')" data-efficiency="3">
+                  <p><i class="icon-power-off"></i>~ 230 kWh annually</p>
+                  <p class="role">
+                    LCD displays, or "flat panels", are better looking and slightly more power efficient
+                     than their CRT predecessor. However, they are more costly to produce in the factory.
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('television', 'crt')">
+                  <svg width="302.31677" height="236.03534" viewbox="0 0 302.31677 236.03534" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 75; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 307.22283,762.57356 c -7.60311,3.65585 -7.15124,12.26679 -7.08411,17.4097 67.62557,1.40944 112.27716,0.9362 178.32029,-0.83361 -0.0327,-7.16535 -0.89025,-15.72713 -7.50084,-17.4097 z"></path>
+                      <path style="fill: none; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 7.5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                  </svg><span>Cathode Ray Tube (CRT)</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('television', 'crt')" data-efficiency="2">
+                  <p><i class="icon-power-off"></i>~ 240 kWh annually</p>
+                  <p class="role">
+                    CRT screens are the older "box" style of television. While their production actually
+                     releases less greenhouse gases than the production of an LCD, they are marginally less
+                     power efficient.
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('television', 'plasma')">
+                  <svg width="302.31677" height="236.03534" viewbox="0 0 302.31677 236.03534" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 50; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #fafafa; stroke-width: 75; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                    <g transform="translate(-237.41305,-545.77308)">
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 307.22283,762.57356 c -7.60311,3.65585 -7.15124,12.26679 -7.08411,17.4097 67.62557,1.40944 112.27716,0.9362 178.32029,-0.83361 -0.0327,-7.16535 -0.89025,-15.72713 -7.50084,-17.4097 z"></path>
+                      <path style="fill: none; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 238.24758,550.9907 c -0.0694,-2.10041 1.1498,-4.68466 5.2661,-4.27638 97.01473,-1.0987 193.70544,-0.90131 290.04762,0.69023 4.21756,0.0431 4.2362,0.78598 4.47015,4.0473 l 1.38799,182.51264 c 0.2247,2.07775 -0.0783,3.44761 -2.63638,3.7504 -100.89387,10.82839 -191.99379,13.57192 -295.38547,4.10303 -3.96659,-0.32082 -3.74126,-2.79521 -3.72832,-3.75159 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 242.21719,550.12763 -0.7631,171.94416 0.33871,15.05954 c 94.36259,9.61404 200.41204,6.80654 294.77463,-3.01048 L 534.5547,551.30652 c -97.29734,-1.74233 -199.02067,-0.33159 -292.33742,-1.17889 z"></path>
+                      <path style="fill: none; fill-opacity: 1; stroke: #000000; stroke-width: 7.5; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0;" d="m 254.14239,562.66163 0,145.93383 268.36329,0.39336 -1.25014,-146.69754 z"></path>
+                    </g>
+                  </svg><span>Plasma Display</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('television', 'plasma')" data-efficiency="1">
+                  <p><i class="icon-power-off"></i>~ 313 kWh annually</p>
+                  <p class="role">
+                    Plasma screens often take a similar "flat" form factor to LCD screens.
+                    They are called "plasma" displays because the technology utilises small cells
+                    containing gases.
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="item">
+            <div class="offset3 span6">
+              <h3>Standby mode</h3>
+              <dl class="timeline standby-list">
+                <dt ng-class="getItemSelectedClass('standby', 'off')">
+                  <svg width="552.6933" height="741.10498" viewbox="0 0 552.6933 741.10498" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,48.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,48.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #ff0000; stroke-width: 0.99969673; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                  </svg><span>Switched off</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('standby', 'off')" data-efficiency="3">
+                  <p><i class="icon-power-off"></i>Uses no power</p>
+                  <p class="role">
+                    Few people have the time to switch off all of their devices after they've finished
+                     using them. But not to worry! There are cheap solutions on the market to help, such
+                     as plug-in timers.
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('standby', 'standby')">
+                  <svg width="552.6933" height="741.10498" viewbox="0 0 552.6933 741.10498" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+                      <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #000000; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+                      <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                  </svg><span>Standby mode</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('standby', 'standby')" data-efficiency="2">
+                  <p><i class="icon-power-off"></i>Varies by device</p>
+                  <p class="role">
+                    If you think your digital set-top-box is not influencing your footprint while in
+                    standby, think again!
+                    The UK uses enough standby power to power 400,000 homes -- just so that the TV switches
+                     on that couple of seconds faster!
+                  </p>
+                </dd>
+                <dt ng-class="getItemSelectedClass('standby', 'always-on')">
+                  <svg width="552.6933" height="741.10498" viewbox="0 0 552.6933 741.10498" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #fafafa; stroke-width: 100; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+                      <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="m 368.9905,783.33819 -0.36575,-173.2671" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="m 370.18281,286.08183 -0.36575,-173.2671" style="fill: #000000; stroke: #fafafa; stroke-width: 100.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                    <g transform="translate(-89.199978,-77.523978)">
+                      <path d="m 354.28571,189.50504 a 105.71429,105.71429 0 1 1 -211.42857,0 105.71429,105.71429 0 1 1 211.42857,0 z" transform="matrix(0.75783876,0,0,0.78486579,177.33721,298.769)" style="fill: #000000; fill-opacity: 1; fill-rule: evenodd; stroke: #000000; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"></path>
+                      <path d="M 124.49073,219.12627 251.45969,337.02665" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 479.63358,564.84056 606.60254,682.74094" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 140.45359,692.98951 258.35397,566.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="M 485.31073,332.98951 603.21111,206.02055" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="m 368.9905,783.33819 -0.36575,-173.2671" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                      <path d="m 370.18281,286.08183 -0.36575,-173.2671" style="fill: #000000; stroke: #000000; stroke-width: 70.58150482; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"></path>
+                    </g>
+                  </svg><span>Always on</span>
+                </dt>
+                <dd ng-class="getItemSelectedClass('standby', 'always-on')" data-efficiency="1">
+                  <p><i class="icon-power-off"></i>Full power consumption</p>
+                  <p class="role">
+                    Modern devices are typically smart enough to switch themselves off after a period of
+                     inactivity, but for audio-visual equipment like set-top-boxes it's difficult to
+                     know when that is. Many devices will keep themselves powered up in order to avoid
+                     disturbing their viewer.
+                  </p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div><a href="javascript:void(0)" data-slide="prev" class="carousel-control left">‹</a><a href="javascript:void(0)" data-slide="next" class="carousel-control right">›</a>
+      </div>
+    </div>
+    <section class="pull-right hidden-phone"><small>Data from case studies for the&nbsp;<a href="http://www-g.eng.cam.ac.uk/impee/?section=topics&amp;topic=DomesticEnergy" target="_blank">ImpEE Project</a>, Department of Engineering, University of Cambridge</small></section>
+  </section>
+</div>

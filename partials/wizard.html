@@ -1,0 +1,46 @@
+
+<section class="intro">
+  <div class="row-fluid">
+    <div style="text-align: center;" class="span12">
+      <h2 class="page-title"><span>Be empowered</span><small> With easy to understand energy usage advice</small></h2>
+    </div>
+  </div>
+  <ng-include src="'/partials/house-and-wizard-overlay.html'"></ng-include><a data-dest="anchor-climate" ng-class="{show: availablePanels.weather}" class="scroll-to-target-button hidden-phone"><span>Weather influence</span></a>
+</section><a id="anchor-climate"></a>
+<section ng-class="{dataless: !availablePanels.weather}" class="second">
+  <div class="row-fluid">
+    <div class="span12">
+      <h2 class="page-title">Weather effects</h2>
+    </div>
+  </div>
+  <div ng-switch="availablePanels.weather">
+    <ng-include ng-switch-when="true" src="'/partials/weather-panel-open.html'"></ng-include>
+    <ng-include ng-switch-when="false" src="'/partials/panel-closed.html'"></ng-include>
+  </div><a data-dest="anchor-footprint" ng-class="{show: availablePanels.travel}" class="scroll-to-target-button hidden-phone">Your energy footprint</a>
+</section><a id="anchor-footprint"></a>
+<section ng-class="{dataless: !availablePanels.household}" class="middle">
+  <div class="row-fluid">
+    <div class="span12">
+      <h2 class="page-title">Household energy</h2>
+    </div>
+  </div>
+  <div ng-switch="availablePanels.household">
+    <ng-include ng-switch-when="true" src="'/partials/household-panel-open.html'"></ng-include>
+    <ng-include ng-switch-when="false" src="'/partials/panel-closed.html'"></ng-include>
+  </div><a data-dest="anchor-advice" ng-class="{show: availablePanels.advice}" class="scroll-to-target-button hidden-phone">Saving money: our advice</a>
+</section><a id="anchor-advice"></a>
+<section ng-class="{dataless: !availablePanels.advice}">
+  <div class="row-fluid">
+    <div class="span12">
+      <h2 class="page-title">Advice</h2>
+    </div>
+  </div>
+  <div ng-switch="availablePanels.advice">
+    <ng-include ng-switch-when="true" src="'/partials/advice-panel-open.html'"></ng-include>
+    <ng-include ng-switch-when="false" src="'/partials/panel-closed.html'"></ng-include>
+  </div>
+</section>
+<section class="outro">
+  <p>That's all folks!</p>
+  <aside>contact me:&nbsp;<a href="http://lukep.org/">lukep.org</a></aside>
+</section>
