@@ -8631,14 +8631,14 @@ section.household-item-breakdown .timeline {
     top: -3px;
     width: 35%; }
 @media -sass-debug-info{filename{}line{font-family:\00003195}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="3"]:after {
-    content: "Very efficient!"; }
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-1:after {
+    content: "You could be spending unnecessarily. See the advice below."; }
 @media -sass-debug-info{filename{}line{font-family:\00003198}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="2"]:after {
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-2:after {
     content: "Good, but see our tips below."; }
 @media -sass-debug-info{filename{}line{font-family:\00003201}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="1"]:after {
-    content: "You could be spending unnecessarily. See the advice below."; }
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-3:after {
+    content: "Very efficient!"; }
 @media -sass-debug-info{filename{}line{font-family:\00003206}}
   section.household-item-breakdown .timeline dd.selected, section.household-item-breakdown .timeline > dt.selected {
     opacity: 1;
@@ -9055,14 +9055,14 @@ section.household-item-breakdown .timeline {
     top: -3px;
     width: 35%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003195}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="3"]:after {
-    content: "Very efficient!"; }
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-1:after {
+    content: "You could be spending unnecessarily. See the advice below."; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003198}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="2"]:after {
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-2:after {
     content: "Good, but see our tips below."; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003201}}
-  section.household-item-breakdown .timeline dd.selected[data-efficiency="1"]:after {
-    content: "You could be spending unnecessarily. See the advice below."; }
+  section.household-item-breakdown .timeline dd.selected.efficiency-grade-3:after {
+    content: "Very efficient!"; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003206}}
   section.household-item-breakdown .timeline dd.selected, section.household-item-breakdown .timeline > dt.selected {
     opacity: 1;
