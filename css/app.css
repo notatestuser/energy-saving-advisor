@@ -8594,7 +8594,7 @@ section.household-item-breakdown .timeline {
     left: -9px; }
 @media -sass-debug-info{filename{}line{font-family:\00003156}}
   section.household-item-breakdown .timeline > dt {
-    opacity: 0.6; }
+    opacity: 0.9; }
 @media -sass-debug-info{filename{}line{font-family:\00003158}}
     section.household-item-breakdown .timeline > dt > svg {
       width: 30px;
@@ -8609,7 +8609,7 @@ section.household-item-breakdown .timeline {
 @media -sass-debug-info{filename{}line{font-family:\00003170}}
   section.household-item-breakdown .timeline dd {
     position: relative;
-    opacity: 0.6;
+    opacity: 0.9;
     margin-bottom: 30px;
     padding-right: 25px;
     min-height: 130px; }
@@ -9018,7 +9018,7 @@ section.household-item-breakdown .timeline {
     left: -9px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003156}}
   section.household-item-breakdown .timeline > dt {
-    opacity: 0.6; }
+    opacity: 0.9; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003158}}
     section.household-item-breakdown .timeline > dt > svg {
       width: 30px;
@@ -9033,7 +9033,7 @@ section.household-item-breakdown .timeline {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/luke\/Dropbox\/Greenfield\/npower-challenge\/app\/styles\/sections\.scss}line{font-family:\00003170}}
   section.household-item-breakdown .timeline dd {
     position: relative;
-    opacity: 0.6;
+    opacity: 0.9;
     margin-bottom: 30px;
     padding-right: 25px;
     min-height: 130px; }
