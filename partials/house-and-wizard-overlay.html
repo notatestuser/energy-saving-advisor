@@ -8,13 +8,13 @@
           <h4>Where do you live in the UK?</h4>
         </div>
         <div class="modal-body">
-          <p>Enter your postcode</p>
+          <p>Enter your full postcode</p>
           <input type="text" data-provide="typeahead" ng-model="house.description" ng-disabled="house.foundViaWebService" class="input-block-level postcode-typeahead-box"/>
           <p ng-class="{in: regionName}" class="collapsing-notice collapse"><i class="icon-home"></i><span class="region-affirmation"> You are living in the {{regionName}} region<span class="visible-desktop"> of the UK</span></span></p>
         </div>
         <div class="modal-footer">
-          <div class="pull-left visible-desktop"><a href="javascript:void(0)" data-toggle="popover" data-placement="bottom" data-content="This housing data was part of an app competition and the data is fake. We don't send anything to anyone. Ever." title="" data-title="Privacy information" class="privacy-information-link"><i class="icon-info-sign"></i><small> Why are you asking?</small></a></div>
-          <button ng-click="showStep(2)" ng-disabled="!house.foundViaWebService" class="btn btn-primary">Next step &raquo;</button>
+          <div class="pull-left visible-desktop"><a href="javascript:void(0)" data-toggle="popover" data-placement="bottom" data-content="This housing data was part of an app competition and it is fake. We don't send anything to anyone. Ever." title="" data-title="Privacy information" class="privacy-information-link"><i class="icon-info-sign"></i><small> Why are you asking?</small></a></div>
+          <button ng-click="showStep(2)" ng-show="house.foundViaWebService" class="btn btn-primary">Next step &raquo;</button>
         </div>
       </div>
     </div>
