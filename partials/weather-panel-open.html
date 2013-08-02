@@ -9,7 +9,7 @@
       <h3 class="pull-left">Month of peak usage</h3>
     </div>
     <div class="row-fluid">
-      <p><span><i class="icon-info-sign"></i> You used<span ng-show="myHighestGasConsumption &gt; 0"> the most gas in<span class="capitalize"> {{principalConsumptionMonthGas}}</span><span class="visible-desktop"> ({{myHighestGasConsumption}} kWh)</span><span ng-show="myHighestElecConsumption &gt; 0"> and</span></span><span ng-show="myHighestElecConsumption &gt; 0"> the most electricity in<span class="capitalize"> {{principalConsumptionMonthElec}}</span><span class="visible-desktop"> ({{myHighestElecConsumption}} kWh)</span></span>.</span></p>
+      <p><span><i class="icon-info-sign"></i> You used<span ng-show="myHighestGasConsumption &gt; 0"> the most gas in<span class="capitalize"> {{principalConsumptionMonthGas}}</span><span class="hidden-phone"> ({{myHighestGasConsumption}} kWh)</span><span ng-show="myHighestElecConsumption &gt; 0"> and</span></span><span ng-show="myHighestElecConsumption &gt; 0"> the most electricity in<span class="capitalize"> {{principalConsumptionMonthElec}}</span><span class="hidden-phone"> ({{myHighestElecConsumption}} kWh)</span></span>.</span></p>
       <ul class="month-display-gauge clearfix">
         <li peak-consumption-month-circle="peak-consumption-month-circle" ng-repeat="month in months" class="span1 hidden-phone"><span class="capitalize">{{month}}</span></li>
       </ul>
