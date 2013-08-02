@@ -38,7 +38,10 @@
                   As your usage appears to be particularly high, you should consider limiting use of
                    the lighting and appliances that may be consuming a lot of power.
                 </p>
-                <p class="well"><i class="icon-check"></i> Action to take: Monitor and regulate {{getOfgemUsageRankEnergies(house)}} usage.</p>
+                <p class="well"><i class="icon-check"></i> Action to take: Monitor your {{getOfgemUsageRankEnergies(house)}} usage.</p>
+              </aside>
+              <aside>
+                <p ng-show="getOfgemUsageRankBand(house) != &quot;low&quot;" class="well"><i class="icon-check"></i> Consider getting a&nbsp;<a href="https://www.gov.uk/green-deal-energy-saving-measures/getting-an-assessment" target="_blank">Green Deal Assessment</a></p>
               </aside><small class="pull-right">Source:<a href="http://www.ofgem.gov.uk/Media/FactSheets/Documents1/domestic%20energy%20consump%20fig%20FS.pdf" target="_blank"> Ofgem</a></small>
             </div>
           </li>
@@ -75,7 +78,7 @@
           </li>
           <li ng-show="householdStuff.lighting == &quot;incandescent&quot;">
             <div>
-              <div class="alert"><span>Incandescent bulbs consume excess energy.</span></div>
+              <div class="alert"><span>Incandescent bulbs use excess energy.</span></div>
               <p>
                 Other bulbs may cost more to purchase but they last much longer and don't have
                  to be replaced as often.
@@ -89,7 +92,7 @@
           </li>
           <li ng-show="householdStuff.standby &amp;&amp; householdStuff.standby != &quot;off&quot;">
             <div>
-              <div ng-switch="householdStuff.standby" class="alert"><span ng-switch-when="always-on">Leaving electronics on consumes energy.</span><span ng-switch-when="standby">  Leaving electronics in standby consumes energy.</span></div>
+              <div ng-switch="householdStuff.standby" class="alert"><span ng-switch-when="always-on">Leaving electronics on uses energy.</span><span ng-switch-when="standby">  Leaving electronics in standby uses energy.</span></div>
               <p>
                 The UK uses enough standby power to power 400,000 homes. Cheap timer plugs are
                  an investment worth considering for set-top boxes and other large audio-visual equipment.
@@ -139,7 +142,10 @@
                   As your usage appears to be particularly high, you should consider limiting use of
                    the lighting and appliances that may be consuming a lot of power.
                 </p>
-                <p class="well"><i class="icon-check"></i> Action to take: Monitor and regulate {{getOfgemUsageRankEnergies(house)}} usage.</p>
+                <p class="well"><i class="icon-check"></i> Action to take: Monitor your {{getOfgemUsageRankEnergies(house)}} usage.</p>
+              </aside>
+              <aside>
+                <p ng-show="getOfgemUsageRankBand(house) != &quot;low&quot;" class="well"><i class="icon-check"></i> Consider getting a&nbsp;<a href="https://www.gov.uk/green-deal-energy-saving-measures/getting-an-assessment" target="_blank">Green Deal Assessment</a></p>
               </aside><small class="pull-right">Source:<a href="http://www.ofgem.gov.uk/Media/FactSheets/Documents1/domestic%20energy%20consump%20fig%20FS.pdf" target="_blank"> Ofgem</a></small>
             </div>
           </li>
