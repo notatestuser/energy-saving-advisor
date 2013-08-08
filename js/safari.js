@@ -1,1 +1,1 @@
-if (navigator.userAgent && navigator.userAgent.match(/Version\/5.*Safari/)) { alert("You are using an older version of Safari, which this app does not support."); }
+if (navigator.userAgent && navigator.userAgent.match(/Version\/5.*Safari/)) { alert("You appear to be using an old version of Safari. This app uses features present in the latest stable versions and may exhibit strange behaviour without them."); }
