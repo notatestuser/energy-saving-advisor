@@ -1,0 +1,1 @@
+if (navigator.userAgent && navigator.userAgent.match(/iPad.*Version\/5/)) { alert("You are using an older version of Safari, which this app does not support."); }
